@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap');
+
+body{
+  background: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans Arabic", sans-serif;
+  direction: rtl;
+}
+
+.cards{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+
+.card{
+  width: 25%;
+  height: 80%;
+  background: #121212;
+  border-radius: 6px;
+  border: 1px solid #ffffff1a;
+  transition: .3s ease all;
+}
+
+.card:hover{
+  background: #0c0c0c;
+  border-radius: 6px 6px 0px 0px;
+  box-shadow: 0px 0px 60px #0e0e0e;
+}
+
+.card-head{
+  width: 100%;
+  height: 15%;
+  border-bottom: 1px solid #ffffff1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-head p{
+  font-weight: 600;
+}
+
+.card-body{
+  width: 100%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-count{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 700;
+  border-bottom: 1px solid #ffffff1a;
+}
+
+.number{
+  background: #0c0c0c;
+  line-height: 0px;
+  font-size: 50px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  transition: .3s ease all;
+}
+.card:hover  .number{
+  background: #121212;
+}
+
+.card-operations{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  gap: 30px;
+  border-bottom: 1px solid #ffffff1a;
+}
+
+.plus, .mines{
+  all: unset;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  line-height: 0px;
+  background: #121212;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.card-footer{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-footer button{
+  all:unset;
+  font-size: 14px;
+  text-decoration: underline;
+}
